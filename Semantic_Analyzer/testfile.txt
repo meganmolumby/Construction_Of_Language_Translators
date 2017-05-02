@@ -1,0 +1,10 @@
+int x;
+int y;
+
+void main ( int x, int y )
+{
+	int z;
+	
+	z = x + y;
+
+}
