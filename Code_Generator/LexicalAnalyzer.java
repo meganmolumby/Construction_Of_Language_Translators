@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class LexicalAnalyzer {
 
-    // HashTable idList = new HashTable();//ID list currently does not have to be look up able but in proj. 3 will need to figure this out.
     public static boolean charCategorization(DataItem input, HashTable list, ArrayList<DataItem> parseString) {
         String creator = "";
         boolean didNotFinishComment = false;
@@ -31,7 +30,7 @@ public class LexicalAnalyzer {
                             break;
                         }
                     }
-                    //IS THIS NECESSARY IS THIS AN ERROR?
+                  
                     if (input.getCounter() < input.getKey().length()) {//checks for end of line
                         if (isAnumber(input, 0)) {//if next is a number, this is an error!
                             //add number to error string.
